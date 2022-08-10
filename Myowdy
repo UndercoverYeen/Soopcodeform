@@ -1,0 +1,20 @@
+class Experiment
+{
+    static void Main(string[] args)
+    {
+        string[] inputs;
+
+        string x = Console.ReadLine();
+        int Input_length = x.Length;
+        string c = new String('-', Input_length);
+        int Half_length = (120 / 2) - (Input_length / 2); 
+        string p = new String(' ', Half_length);
+        string Padding = p + c;
+        string Text_out = p + x;
+
+        Console.WriteLine(Padding);
+        Console.WriteLine(Text_out);
+        Console.WriteLine(Padding);
+        Console.WriteLine(Input_length);
+    }
+}
